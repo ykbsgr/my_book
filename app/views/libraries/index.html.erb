@@ -24,7 +24,7 @@
         <td><%= library.write_name %></td>
         <td><%= number_to_currency(library.price, :unit => "￥", precision: 0) %></td>
         <td><%= library.publisher %></td>
-        <td><%= library.releasedate %></td>
+        <td><%= library.releasedate.strftime('%Y/%m/%d') %></td>
         <td><%= library.isbn_code %></td>
         <td><img src="<%= library.image %>" class="img-responsive" alt="表紙画像"></td>
         <td><%= link_to '閲覧', library, class:"btn btn-info btn-xs" %></td>
