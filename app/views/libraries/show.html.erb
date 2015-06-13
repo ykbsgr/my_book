@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Book name:</strong>
+  <%= @library.book_name %>
+</p>
+
+<p>
+  <strong>Write name:</strong>
+  <%= @library.write_name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @library.price %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @library.publisher %>
+</p>
+
+<p>
+  <strong>Releasedate:</strong>
+  <%= @library.releasedate %>
+</p>
+
+<p>
+  <strong>Isbn code:</strong>
+  <%= @library.isbn_code %>
+</p>
+
+<p>
+  <strong>image:</strong>
+  <img src="<%= @library.image %>">
+</p>
+
+
+<%= link_to 'Edit', edit_library_path(@library) %> |
+<%= link_to 'Back', libraries_path %>
